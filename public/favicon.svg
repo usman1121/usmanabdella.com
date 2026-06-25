@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      @font-face {
+        font-family: 'BSIDE';
+        src: url('/b_side/BSIDE___.ttf') format('truetype');
+      }
+      .text {
+        font-family: 'BSIDE', sans-serif;
+        font-size: 42px;
+        font-weight: bold;
+        fill: #ffffff;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+    </style>
+  </defs>
+  <rect width="100" height="100" rx="20" fill="#000000"/>
+  <text x="50" y="52" class="text">UA</text>
+</svg>
