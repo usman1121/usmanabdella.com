@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Send } from "lucide-react";
+import { ArrowUpRight, FileText, Send } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import ResumeViewer from "@/components/ResumeViewer";
 
 interface WorkItem {
   title: string;
@@ -16,6 +23,7 @@ const works: WorkItem[] = [
 ];
 
 const Index = () => {
+  const [resumeOpen, setResumeOpen] = useState(false);
 
   return (
     <main
@@ -208,6 +216,19 @@ const Index = () => {
             <div className="flex gap-6 items-center">
               <a href="mailto:usmanabdella1121@gmail.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Email</a>
               <a href="https://github.com/usman1121" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">GitHub</a>
+              <Dialog open={resumeOpen} onOpenChange={setResumeOpen}>
+                <DialogTrigger asChild>
+                  <button className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2 cursor-pointer">
+                    Resume
+                    <FileText className="w-4 h-4" />
+                  </button>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl h-[85vh] flex flex-col p-0 pt-10">
+                  <div className="flex-1 min-h-0 overflow-hidden flex flex-col">
+                    <ResumeViewer />
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
             <a href="https://t.me/us8349" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2">
               Telegram
