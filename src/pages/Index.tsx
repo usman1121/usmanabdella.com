@@ -8,6 +8,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import ResumeViewer from "@/components/ResumeViewer";
+import { useProjects } from "@/hooks/useProjects";
 
 interface WorkItem {
   title: string;
@@ -16,14 +17,18 @@ interface WorkItem {
   externalLink?: string;
 }
 
-const works: WorkItem[] = [
-  { title: "School Management System", year: "2026", externalLink: "https://www.yeneschool.me/" },
-  { title: "Employee Management System", year: "2023", link: "/employee-management", externalLink: "https://github.com/usman1121/Employee-Management-System" },
-  { title: "Property Management System", year: "2024" },
-];
-
 const Index = () => {
   const [resumeOpen, setResumeOpen] = useState(false);
+  const { projects, loading } = useProjects();
+
+  const works: WorkItem[] = projects.map((project) => ({
+    title: project.title,
+    year: project.year,
+    link: `/projects/${project.slug}`,
+    externalLink: project.externalLink
+      ? `https://${project.externalLink}`
+      : project.githubLink,
+  }));
 
   return (
     <main
@@ -91,6 +96,9 @@ const Index = () => {
             <h2 className="section-header">Work</h2>
             
             <div className="space-y-6">
+              {loading && (
+                <p className="text-sm text-muted-foreground">Loading projects...</p>
+              )}
               {works.map((work, index) => (
                 <motion.div
                   key={work.title}
@@ -98,21 +106,8 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                 >
-                  {work.externalLink ? (
-                    <a 
-                      href={work.externalLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="work-item group"
-                    >
-                      <span className="work-item-title">
-                        {work.title}
-                        <ArrowUpRight className="work-item-arrow opacity-0 group-hover:opacity-100 transition-opacity" />
-                      </span>
-                      <span className="work-item-year">{work.year}</span>
-                    </a>
-                  ) : (
-                    <Link to={work.link!} className="work-item group">
+                  {work.link && (
+                    <Link to={work.link} className="work-item group">
                       <span className="work-item-title">
                         {work.title}
                         <ArrowUpRight className="work-item-arrow opacity-0 group-hover:opacity-100 transition-opacity" />
