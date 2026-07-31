@@ -12,19 +12,19 @@ const experiences = [
     company: "Employee Management System",
     dateRange: "2023",
     role: "Full-stack Developer",
-    link: "/employee-management",
+    link: "/projects/employee-management",
   },
   {
     company: "Ecommerce",
     dateRange: "2023",
     role: "Full-stack Developer",
-    link: "/ecommerce",
+    link: "/projects/ecommerce",
   },
   {
     company: "Property Management System",
     dateRange: "2024",
     role: "Full-stack Developer",
-    link: "/property-management",
+    link: "/projects/property-management",
   },
 ];
 
