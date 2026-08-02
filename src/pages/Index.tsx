@@ -166,7 +166,7 @@ const Index = () => {
               <h2 className="section-header">About</h2>
               <div className="space-y-6">
                 <p className="body-text">
-                  Software Engineering student at BITS School of Science and Technology with a passion for building practical, scalable applications.
+                  Software Engineering student at BITS School of Science and Technology and Co-founder of Afro Digital Innovation Labs. Passionate about building practical, scalable applications.
                 </p>
                 <p className="body-text">
                   I specialize in creating solutions for real-world problems, from educational platforms to business management systems.
