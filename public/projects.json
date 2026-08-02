@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "slug": "school-management",
-      "title": "School Management System",
+      "slug": "yeneschool",
+      "title": "Yeneschool",
       "year": "2026",
       "role": "Full-stack Developer",
       "timeline": "2026",
@@ -10,7 +10,7 @@
       "summary": "A complete school administration platform handling students, staff, academics, and finances in one place.",
       "externalLink": "www.yeneschool.me",
       "githubLink": null,
-      "tech": ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
+      "tech": ["Nest", "Next", "Redis", "BullMQ", "PostgreSQL", "Nginx", "Tailwind", "Shadcn UI"],
       "images": [],
       "sections": [
         {
@@ -40,91 +40,52 @@
       ]
     },
     {
-      "slug": "employee-management",
-      "title": "Employee Management System",
-      "year": "2023",
+      "slug": "fenaid",
+      "title": "Fenaid",
+      "year": "2025",
       "role": "Full-stack Developer",
-      "timeline": "2023",
+      "timeline": "2025",
       "team": null,
-      "summary": "A system to manage employee records, roles, and departments efficiently.",
-      "externalLink": null,
-      "githubLink": "https://github.com/usman1121/Employee-Management-System",
-      "tech": ["React", "Node.js", "MongoDB", "Express"],
-      "images": [],
-      "sections": [
-        {
-          "heading": "The Challenge",
-          "paragraphs": [
-            "Managing employee data across spreadsheets and paperwork makes it hard to keep records accurate, searchable, and up to date as teams grow."
-          ]
-        },
-        {
-          "heading": "The Solution",
-          "paragraphs": [
-            "A web application for managing employee records, including personal details, roles, departments, and employment status, with clean search and filtering."
-          ]
-        },
-        {
-          "heading": "Key Features",
-          "paragraphs": [
-            "Employee CRUD operations, department and role assignment, search and filter by attribute, and an intuitive interface for everyday HR tasks."
-          ]
-        },
-        {
-          "heading": "Impact",
-          "paragraphs": [
-            "Replaces manual record-keeping with a fast, searchable system, cutting the time spent finding and updating employee information."
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "ecommerce",
-      "title": "Ecommerce",
-      "year": "2023",
-      "role": "Full-stack Developer",
-      "timeline": "2023",
-      "team": null,
-      "summary": "A full-featured online store with product catalogs, cart, and checkout flow.",
+      "summary": "An intellectual and physical disability organization platform that helps children access support and resources.",
       "externalLink": null,
       "githubLink": null,
-      "tech": ["React", "Node.js", "MongoDB", "Express"],
+      "tech": ["Nest", "Next", "BullMQ", "PostgreSQL", "Tailwind", "Shadcn UI"],
       "images": [],
       "sections": [
         {
           "heading": "The Challenge",
           "paragraphs": [
-            "Building an online store from scratch means wiring together product listings, a shopping cart, orders, and payments into one smooth experience."
+            "Families of children with intellectual and physical disabilities struggle to find coordinated support, resources, and services in one place. Existing systems are fragmented and hard to navigate."
           ]
         },
         {
           "heading": "The Solution",
           "paragraphs": [
-            "A complete ecommerce platform with browsable product catalog, category filtering, cart management, and a guided checkout flow."
+            "I built a platform that connects families with therapists, educators, and support services, providing a centralized hub for resource discovery, appointment scheduling, and progress tracking."
           ]
         },
         {
           "heading": "Key Features",
           "paragraphs": [
-            "Product catalog with categories and search, add-to-cart and cart persistence, order summaries and checkout, and an admin view for managing products."
+            "Disability resource directory, appointment scheduling, progress tracking for children, role-based access for families and service providers, and accessible design for all users."
           ]
         },
         {
           "heading": "Impact",
           "paragraphs": [
-            "Demonstrates a full purchase journey end-to-end and provides a reusable foundation for real storefront deployments."
+            "Helps families find the right support faster and gives service providers a streamlined way to manage their caseloads and track outcomes."
           ]
         }
       ]
     },
     {
-      "slug": "property-management",
-      "title": "Property Management System",
-      "year": "2024",
+      "slug": "mykeycoffe",
+      "title": "Mykeycoffe",
+      "year": "2025",
       "role": "Full-stack Developer",
-      "timeline": "2024",
+      "timeline": "2025",
       "team": null,
-      "summary": "A platform to manage property listings, tenants, leases, and maintenance requests.",
+      "summary": "A coffee marketplace inspired by Arabia, featuring multiple categories and a seamless ordering experience.",
       "externalLink": null,
       "githubLink": null,
       "tech": ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
@@ -133,25 +94,64 @@
         {
           "heading": "The Challenge",
           "paragraphs": [
-            "Property owners and managers track listings, tenants, leases, and maintenance issues across many moving parts—often scattered across documents and spreadsheets."
+            "Coffee lovers in the region need a platform that brings together specialty coffee shops, brewing methods, and product categories in one curated experience."
           ]
         },
         {
           "heading": "The Solution",
           "paragraphs": [
-            "A property management system that centralizes property and unit listings, tenant records, lease agreements, and maintenance request tracking."
+            "I built a coffee marketplace with multiple categories—espresso, filter, cold brew, and more—alongside shop profiles, product listings, and a smooth ordering flow."
           ]
         },
         {
           "heading": "Key Features",
           "paragraphs": [
-            "Property and unit management, tenant profiles and lease tracking, maintenance request workflows, and dashboards for quick oversight of each property."
+            "Category-based browsing, shop profiles with menus, product search and filtering, cart and checkout flow, and responsive design for mobile and desktop."
           ]
         },
         {
           "heading": "Impact",
           "paragraphs": [
-            "Gives owners and managers one place to monitor their portfolio, reducing confusion and speeding up everyday operations like move-ins and repairs."
+            "Connects coffee shops with customers and provides a modern, curated coffee shopping experience inspired by Arabian coffee culture."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "saftex-garment",
+      "title": "Saftex Garment",
+      "year": "2025",
+      "role": "Full-stack Developer",
+      "timeline": "2025",
+      "team": null,
+      "summary": "An inventory management system that handles multi-branching for clothes and uniforms.",
+      "externalLink": null,
+      "githubLink": null,
+      "tech": ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
+      "images": [],
+      "sections": [
+        {
+          "heading": "The Challenge",
+          "paragraphs": [
+            "Garment businesses with multiple branches struggle to track inventory across locations, manage stock levels, and coordinate uniform distribution efficiently."
+          ]
+        },
+        {
+          "heading": "The Solution",
+          "paragraphs": [
+            "I built a centralized inventory management system that handles multi-branch stock tracking, uniform allocation, and real-time inventory visibility across all locations."
+          ]
+        },
+        {
+          "heading": "Key Features",
+          "paragraphs": [
+            "Multi-branch inventory tracking, uniform allocation and management, real-time stock levels, category-based organization for clothes and uniforms, and role-based access for branch managers."
+          ]
+        },
+        {
+          "heading": "Impact",
+          "paragraphs": [
+            "Eliminates manual inventory tracking across branches, reduces stock discrepancies, and provides real-time visibility into inventory levels across all locations."
           ]
         }
       ]
