@@ -55,6 +55,16 @@ const AboutSection = () => {
         >
           Always learning, always building.
         </motion.p>
+        
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="body-text"
+        >
+          Co-founder of Afro Digital Innovation Labs, building innovative solutions that blend technology with cultural impact.
+        </motion.p>
       </div>
     </section>
   );
