@@ -22,13 +22,28 @@ const ResumeViewer = () => {
     return () => observer.disconnect();
   }, []);
 
+  const resumeUrl = `${import.meta.env.BASE_URL}Usman_Resume.pdf`;
+
   return (
-    <div ref={containerRef} className="w-full overflow-y-auto min-h-0">
+    <div ref={containerRef} className="w-full overflow-y-auto min-h-0 flex-1">
       <Document
-        file="/Usman_Resume.pdf"
+        file={resumeUrl}
         onLoadSuccess={({ numPages }) => setNumPages(numPages)}
         loading={<div className="py-12 text-center text-sm text-muted-foreground">Loading resume...</div>}
-        error={<div className="py-12 text-center text-sm text-muted-foreground">Failed to load resume.</div>}
+        error={
+          <div className="py-12 text-center text-sm text-muted-foreground space-y-4">
+            <p>Unable to display PDF preview directly.</p>
+            <a
+              href={resumeUrl}
+              download="Usman_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 border border-border rounded text-foreground hover:bg-white/5 transition-colors"
+            >
+              Download PDF Directly
+            </a>
+          </div>
+        }
       >
         {Array.from(new Array(numPages || 0), (_, i) => (
           <Page
