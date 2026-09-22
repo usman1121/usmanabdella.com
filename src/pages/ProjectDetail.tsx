@@ -30,7 +30,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-12 min-h-screen">
         {/* Left Sidebar */}
         <motion.aside

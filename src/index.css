@@ -174,15 +174,25 @@
   }
   
   .grid-sidebar {
-    @apply lg:col-span-2 p-6 lg:p-8;
-    border-right: 1px solid;
-    border-image: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.05), rgba(255,255,255,0.2)) 1;
+    @apply lg:col-span-2 p-6 lg:p-8 border-b lg:border-b-0 border-border;
+  }
+
+  @media (min-width: 1024px) {
+    .grid-sidebar {
+      border-right: 1px solid;
+      border-image: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.05), rgba(255,255,255,0.2)) 1;
+    }
   }
   
   .grid-main {
-    @apply lg:col-span-5 p-6 lg:p-8;
-    border-right: 1px solid;
-    border-image: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.05), rgba(255,255,255,0.2)) 1;
+    @apply lg:col-span-5 p-6 lg:p-8 border-b lg:border-b-0 border-border;
+  }
+
+  @media (min-width: 1024px) {
+    .grid-main {
+      border-right: 1px solid;
+      border-image: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.05), rgba(255,255,255,0.2)) 1;
+    }
   }
   
   .grid-secondary {
@@ -193,6 +203,21 @@
   .name-display {
     @apply text-base md:text-lg font-normal text-foreground leading-tight mb-8;
     font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  /* Subtle architectural dark pattern overlay */
+  .dark-pattern-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image: 
+      radial-gradient(ellipse at 50% -10%, rgba(255, 255, 255, 0.05) 0%, transparent 65%),
+      linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    background-size: 100% 100%, 36px 36px, 36px 36px;
+    mask-image: radial-gradient(ellipse 95% 85% at 50% 20%, black 40%, transparent 95%);
+    -webkit-mask-image: radial-gradient(ellipse 95% 85% at 50% 20%, black 40%, transparent 95%);
   }
 }
 
