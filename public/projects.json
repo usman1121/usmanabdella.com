@@ -46,7 +46,7 @@
       "role": "Full-stack Developer",
       "timeline": "2025",
       "team": null,
-      "summary": "An intellectual and physical disability organization platform that helps children access support and resources.",
+      "summary": "A unified coordination platform connecting families of children with intellectual and physical disabilities to essential care, therapy, and support services.",
       "externalLink": null,
       "githubLink": null,
       "tech": ["Nest", "Next", "BullMQ", "PostgreSQL", "Tailwind", "Shadcn UI"],
@@ -55,25 +55,25 @@
         {
           "heading": "The Challenge",
           "paragraphs": [
-            "Families of children with intellectual and physical disabilities struggle to find coordinated support, resources, and services in one place. Existing systems are fragmented and hard to navigate."
+            "Families caring for children with specialized physical and developmental needs frequently struggle with fragmented services, scattered medical paperwork, and prolonged referral delays without clear care milestones."
           ]
         },
         {
           "heading": "The Solution",
           "paragraphs": [
-            "I built a platform that connects families with therapists, educators, and support services, providing a centralized hub for resource discovery, appointment scheduling, and progress tracking."
+            "I built a centralized platform enabling care coordinators, therapists, and families to discover specialized programs, book sessions, and collaboratively monitor developmental progress in one accessible portal."
           ]
         },
         {
           "heading": "Key Features",
           "paragraphs": [
-            "Disability resource directory, appointment scheduling, progress tracking for children, role-based access for families and service providers, and accessible design for all users."
+            "Verified disability resource directory, integrated appointment scheduling, milestone & progress tracking for children, and accessible, role-based interfaces tailored for families and service providers."
           ]
         },
         {
           "heading": "Impact",
           "paragraphs": [
-            "Helps families find the right support faster and gives service providers a streamlined way to manage their caseloads and track outcomes."
+            "Significantly simplified how families discover qualified care and equipped providers with clear caseload visibility to track longitudinal therapy outcomes."
           ]
         }
       ]
@@ -85,7 +85,7 @@
       "role": "Full-stack Developer",
       "timeline": "2025",
       "team": null,
-      "summary": "A coffee marketplace inspired by Arabia, featuring multiple categories and a seamless ordering experience.",
+      "summary": "A curated digital marketplace celebrating Arabian coffee heritage, connecting artisanal roasters with coffee enthusiasts through an intuitive ordering experience.",
       "externalLink": null,
       "githubLink": null,
       "tech": ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
@@ -94,25 +94,25 @@
         {
           "heading": "The Challenge",
           "paragraphs": [
-            "Coffee lovers in the region need a platform that brings together specialty coffee shops, brewing methods, and product categories in one curated experience."
+            "Specialty coffee roasters and regional consumers lacked a dedicated digital hub tailored to the nuanced roasting profiles, origins, and brewing techniques of Arabian coffee culture."
           ]
         },
         {
           "heading": "The Solution",
           "paragraphs": [
-            "I built a coffee marketplace with multiple categories—espresso, filter, cold brew, and more—alongside shop profiles, product listings, and a smooth ordering flow."
+            "Developed an end-to-end e-commerce platform featuring origin and roast breakdowns, roaster profiles, tailored brew recommendations, and an efficient shopping workflow."
           ]
         },
         {
           "heading": "Key Features",
           "paragraphs": [
-            "Category-based browsing, shop profiles with menus, product search and filtering, cart and checkout flow, and responsive design for mobile and desktop."
+            "Roast and origin categorization (espresso, filter, cold brew, beans), roaster storefronts with seasonal releases, fast search and filtration, cart management, and mobile-first checkout."
           ]
         },
         {
           "heading": "Impact",
           "paragraphs": [
-            "Connects coffee shops with customers and provides a modern, curated coffee shopping experience inspired by Arabian coffee culture."
+            "Created an engaging bridge between artisanal roasters and coffee lovers, fostering higher product discovery and community appreciation for regional coffee craft."
           ]
         }
       ]
@@ -124,7 +124,7 @@
       "role": "Full-stack Developer",
       "timeline": "2025",
       "team": null,
-      "summary": "An inventory management system that handles multi-branching for clothes and uniforms.",
+      "summary": "A distributed multi-branch inventory management system engineered for garment manufacturers, retail branches, and uniform fulfillment.",
       "externalLink": null,
       "githubLink": null,
       "tech": ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
@@ -133,25 +133,25 @@
         {
           "heading": "The Challenge",
           "paragraphs": [
-            "Garment businesses with multiple branches struggle to track inventory across locations, manage stock levels, and coordinate uniform distribution efficiently."
+            "Garment businesses operating across multiple branch locations struggle with manual spreadsheets, recurring stock discrepancies, misplaced uniform orders, and delayed restocks."
           ]
         },
         {
           "heading": "The Solution",
           "paragraphs": [
-            "I built a centralized inventory management system that handles multi-branch stock tracking, uniform allocation, and real-time inventory visibility across all locations."
+            "Architected a centralized inventory system with real-time multi-branch stock tracking, batch uniform allocation, inter-branch transfers, and automated low-stock triggers."
           ]
         },
         {
           "heading": "Key Features",
           "paragraphs": [
-            "Multi-branch inventory tracking, uniform allocation and management, real-time stock levels, category-based organization for clothes and uniforms, and role-based access for branch managers."
+            "Multi-location stock synchronization, uniform sizing matrix and batch tracking, automated reorder thresholds, audit trails for transfer slips, and tiered branch manager permissions."
           ]
         },
         {
           "heading": "Impact",
           "paragraphs": [
-            "Eliminates manual inventory tracking across branches, reduces stock discrepancies, and provides real-time visibility into inventory levels across all locations."
+            "Eliminated manual cross-branch auditing, drastically minimized stockout rates, and provided leadership with instant visibility into warehouse valuation across all branches."
           ]
         }
       ]
