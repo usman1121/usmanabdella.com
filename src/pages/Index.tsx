@@ -52,10 +52,6 @@ const Index = () => {
         >
           {/* Hero Text */}
           <section id="about" className="mb-16 pt-8 lg:pt-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-400 text-xs font-mono mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              Available for projects & engineering roles
-            </div>
             <p className="body-text max-w-xl">
               Software engineer crafting thoughtful, high-leverage digital systems. Co-founder of Afro Digital Innovation Labs, transforming operational bottlenecks into reliable, human-centered products.
             </p>
