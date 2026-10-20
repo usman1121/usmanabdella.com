@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:resume": "chromium --headless --disable-gpu --no-pdf-header-footer --print-to-pdf=public/Usman_Resume.pdf file://$(pwd)/resume/resume.html && cp public/Usman_Resume.pdf Usman_Resume.pdf",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
