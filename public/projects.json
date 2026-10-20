@@ -1,6 +1,45 @@
 {
   "projects": [
     {
+      "slug": "tibeb-med",
+      "title": "Tibeb Telehealth",
+      "year": "2026",
+      "role": "Full-stack Developer",
+      "timeline": "2026",
+      "team": null,
+      "summary": "A virtual healthcare platform connecting patients across Ethiopia with verified doctors for live video/chat consultations, instant booking, and digital prescriptions.",
+      "externalLink": "tele.tibeb.et",
+      "githubLink": null,
+      "tech": ["Next.js", "Nest", "PostgreSQL", "Redis", "TypeScript", "Tailwind", "Chapa"],
+      "images": [],
+      "sections": [
+        {
+          "heading": "The Challenge",
+          "paragraphs": [
+            "Accessing specialized healthcare across Ethiopia often involves arduous travel, long hospital queues, and fragmented records. Patients and doctors needed a dependable, accessible platform for rapid medical consultations, remote triage, and secure health management from anywhere."
+          ]
+        },
+        {
+          "heading": "The Solution",
+          "paragraphs": [
+            "Architected and engineered Tibeb Telehealth (tele.tibeb.et), a human-centered virtual care platform built for scale. The platform allows patients to search verified doctors by specialty, book on-demand or scheduled consultations via video or chat, and receive legitimate digital prescriptions directly to their devices."
+          ]
+        },
+        {
+          "heading": "Key Features",
+          "paragraphs": [
+            "Verified doctor credentialing and discovery across specialties (Cardiology, Pediatrics, Dermatology, Mental Health, and more), real-time virtual consultation rooms (video and encrypted chat) with under 10-minute average response times, instant digital prescription issuance with pharmacy dispatch support, and seamless payment processing integrated with Chapa."
+          ]
+        },
+        {
+          "heading": "Impact",
+          "paragraphs": [
+            "Brings reliable clinical consultations within reach of patients nationwide, reducing clinic wait times, eliminating travel barriers for specialist care, and providing physicians with an efficient, modern telehealth workflow."
+          ]
+        }
+      ]
+    },
+    {
       "slug": "yeneschool",
       "title": "Yeneschool",
       "year": "2026",
