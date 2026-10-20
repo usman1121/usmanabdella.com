@@ -21,7 +21,7 @@ const AboutSection = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="body-text"
         >
-          Software Engineering student at BITS School of Science and Technology with a passion for building practical, scalable applications. Currently developing full-stack solutions using modern technologies and strong engineering practices.
+          Senior full-stack engineer with a passion for building practical, scalable applications. Currently developing full-stack solutions using modern technologies and strong engineering practices.
         </motion.p>
         
         <motion.p
@@ -63,7 +63,7 @@ const AboutSection = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="body-text"
         >
-          Co-founder of Afro Digital Innovation Labs, building innovative solutions that blend technology with cultural impact.
+          Senior full stack engineer at Afro Digital Innovation Labs for 4 years, building innovative solutions and high-impact digital products.
         </motion.p>
       </div>
     </section>

@@ -56,7 +56,7 @@ const HeroSection = () => {
         transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         className="text-xl md:text-2xl lg:text-3xl font-semibold text-foreground mb-4"
       >
-        Software Engineering Student.
+        Senior Full-Stack Engineer.
       </motion.p>
 
       {/* Description */}
@@ -66,7 +66,7 @@ const HeroSection = () => {
         transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl"
       >
-        Building real-world applications at BITS School of Science and Technology.
+        Working at Afro Digital Innovation Labs for 4 years.
       </motion.p>
 
       {/* Featured Showcase */}
