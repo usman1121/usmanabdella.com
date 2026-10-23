@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Usman Abdella — Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm 14mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 8.8pt;
+      line-height: 1.32;
+      color: #1a1a1a;
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a.link {
+      color: #0f172a;
+      text-decoration: underline;
+      text-decoration-color: #94a3b8;
+      text-underline-offset: 2px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 9px;
+    }
+    .name {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      color: #0f172a;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+    }
+    .title {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 4px;
+      letter-spacing: 0.3px;
+    }
+    .contact-row {
+      font-size: 8.3pt;
+      color: #475569;
+      line-height: 1.36;
+    }
+    .contact-row a {
+      color: #334155;
+    }
+    .sep {
+      margin: 0 5px;
+      color: #94a3b8;
+    }
+
+    /* Section */
+    .section {
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-size: 9.2pt;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 8.6pt;
+      line-height: 1.34;
+      color: #334155;
+      text-align: justify;
+    }
+
+    /* Entries */
+    .entry {
+      margin-bottom: 5px;
+    }
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+    .entry-title {
+      font-size: 9.1pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .entry-dates {
+      font-size: 8.3pt;
+      font-weight: 600;
+      color: #475569;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .entry-subline {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.3pt;
+      color: #64748b;
+      margin-bottom: 2px;
+    }
+    .entry-subline .role {
+      font-weight: 600;
+      color: #334155;
+    }
+
+    /* Bullets */
+    ul.bullets {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul.bullets li {
+      position: relative;
+      padding-left: 13px;
+      font-size: 8.4pt;
+      line-height: 1.28;
+      color: #334155;
+      margin-bottom: 1.5px;
+    }
+    ul.bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: #64748b;
+      font-size: 8.5pt;
+    }
+    ul.bullets li strong {
+      color: #0f172a;
+    }
+
+    /* Skills Grid */
+    .skills-table {
+      width: 100%;
+      font-size: 8.4pt;
+      line-height: 1.30;
+      border-collapse: collapse;
+    }
+    .skills-table td {
+      padding: 1px 0;
+      vertical-align: top;
+    }
+    .skills-label {
+      font-weight: 700;
+      color: #0f172a;
+      width: 115px;
+      white-space: nowrap;
+    }
+    .skills-value {
+      color: #334155;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="name">Usman Abdella</h1>
+    <div class="title">Senior Full-Stack Engineer</div>
+    <div class="contact-row">
+      <span>Addis Ababa, Ethiopia</span>
+      <span class="sep">·</span>
+      <span>+251 983 355 598</span>
+      <span class="sep">·</span>
+      <a href="mailto:usmanabdella1121@gmail.com">usmanabdella1121@gmail.com</a>
+    </div>
+    <div class="contact-row">
+      <a href="https://github.com/usman1121" target="_blank">github.com/usman1121</a>
+      <span class="sep">·</span>
+      <a href="https://linkedin.com/in/usman-abdella-ba8367319" target="_blank">linkedin.com/in/usman-abdella-ba8367319</a>
+      <span class="sep">·</span>
+      <a href="https://usmanabdella.com" target="_blank">usmanabdella.com</a>
+    </div>
+  </header>
+
+  <!-- Professional Summary -->
+  <section class="section">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary-text">
+      Senior Full-Stack Engineer with 4 years of experience (Jan 2022 – Aug 2026) designing, architecting, and deploying resilient production web applications and distributed backend architectures at Afro Digital Innovation Labs. Expert across the TypeScript/JavaScript ecosystem (Next.js, React, NestJS, Node.js), Python, PostgreSQL, and distributed job queues with Redis and BullMQ. Proven track record of turning complex operational bottlenecks into fast, secure, and human-centered software.
+    </p>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="section">
+    <h2 class="section-title">Featured Projects</h2>
+    
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Tibeb Telehealth — Virtual Care Platform <span style="font-weight: 500; font-size: 8.2pt; color: #64748b;">(<a href="https://tele.tibeb.et" target="_blank" class="link">tele.tibeb.et</a>)</span></span>
+        <span class="entry-dates">2026</span>
+      </div>
+      <div class="entry-subline">
+        <span class="role">Full-Stack Developer · Next.js, NestJS, PostgreSQL, Redis, Tailwind CSS, Chapa</span>
+      </div>
+      <ul class="bullets">
+        <li>Built an on-demand telemedicine platform connecting patients across Ethiopia with verified medical doctors via live video and encrypted chat.</li>
+        <li>Implemented doctor credentialing, appointment triage with sub-10 minute response times, digital prescriptions, and Chapa payments.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">YeneSchool — Unified School Administration System <span style="font-weight: 500; font-size: 8.2pt; color: #64748b;">(<a href="https://www.yeneschool.me" target="_blank" class="link">yeneschool.me</a>)</span></span>
+        <span class="entry-dates">2025 – 2026</span>
+      </div>
+      <div class="entry-subline">
+        <span class="role">Full-Stack Developer · Next.js, NestJS, Redis, BullMQ, PostgreSQL, Tailwind, Shadcn UI</span>
+      </div>
+      <ul class="bullets">
+        <li>Architected a multi-tenant school ERP centralizing student records, academic grade tracking, fee collections, and staff scheduling.</li>
+        <li>Automated report card generation and billing notifications using BullMQ worker queues, saving administrative staff hours weekly.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Fenaid — Disability Care Coordination Platform</span>
+        <span class="entry-dates">2025</span>
+      </div>
+      <div class="entry-subline">
+        <span class="role">Full-Stack Developer · NestJS, Next.js, PostgreSQL, BullMQ, Tailwind CSS</span>
+      </div>
+      <ul class="bullets">
+        <li>Developed a care coordination platform connecting families of children with physical and developmental needs to verified therapy services.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education & Foundation -->
+  <section class="section">
+    <h2 class="section-title">Education & Foundation</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">BITS School of Science and Technology</span>
+        <span class="entry-dates">2024 – 2030</span>
+      </div>
+      <div class="entry-subline">
+        <span class="role">Bachelor of Engineering (B.E.) in Software Engineering</span>
+        <span>Addis Ababa, Ethiopia</span>
+      </div>
+      <p style="font-size: 8.3pt; color: #475569; line-height: 1.28;">
+        Core coursework: Algorithms & Data Structures, Relational Database Systems, Distributed Systems, Software Design Patterns, System Architecture.
+      </p>
+    </div>
+  </section>
+
+  <!-- Work Experience (Company Below Education Section) -->
+  <section class="section">
+    <h2 class="section-title">Work Experience</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Afro Digital Innovation Labs</span>
+        <span class="entry-dates">Jan 2022 – Aug 2026 · 4 yrs</span>
+      </div>
+      <div class="entry-subline">
+        <span class="role">Senior Full-Stack Engineer</span>
+        <span>Addis Ababa, Ethiopia · Full-Time</span>
+      </div>
+      <ul class="bullets">
+        <li><strong>End-to-End System Architecture:</strong> Architected and delivered scalable web applications, microservices, and distributed Redis/BullMQ worker queues.</li>
+        <li><strong>API & Database Design:</strong> Designed normalized PostgreSQL schemas, optimized indexing, and built secure, type-safe RESTful APIs with NestJS.</li>
+        <li><strong>Security & Payments:</strong> Built enterprise-grade RBAC authentication, session handling, and localized payment gateway integration with Chapa.</li>
+        <li><strong>Engineering & DevOps:</strong> Streamlined Docker containerization, Linux administration, Nginx proxy configs, and mentored junior engineers.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <table class="skills-table">
+      <tr>
+        <td class="skills-label">Languages:</td>
+        <td class="skills-value">TypeScript, JavaScript, Python, SQL, HTML5, CSS3, Bash</td>
+      </tr>
+      <tr>
+        <td class="skills-label">Frontend:</td>
+        <td class="skills-value">React, Next.js (App Router), Tailwind CSS, Shadcn UI, Framer Motion</td>
+      </tr>
+      <tr>
+        <td class="skills-label">Backend & Queues:</td>
+        <td class="skills-value">NestJS, Node.js, Express.js, Redis, BullMQ, RESTful APIs, Microservices</td>
+      </tr>
+      <tr>
+        <td class="skills-label">Databases & Tools:</td>
+        <td class="skills-value">PostgreSQL, MySQL, MongoDB, SQLite, Docker, Git, GitHub, Linux, Vercel, Chapa API</td>
+      </tr>
+      <tr>
+        <td class="skills-label">Spoken Languages:</td>
+        <td class="skills-value">English (Professional proficiency), Amharic (Native)</td>
+      </tr>
+    </table>
+  </section>
+
+</body>
+</html>

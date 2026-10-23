@@ -35,7 +35,7 @@ const Index = () => {
               Senior Full-Stack Engineer
             </p>
           </div>
-          
+
           <nav className="flex flex-col gap-3 mb-8">
             <a href="#about" className="nav-link">About</a>
             <a href="#experience" className="nav-link">Experience</a>
@@ -63,115 +63,15 @@ const Index = () => {
             <p className="body-text max-w-xl">
               Senior full-stack engineer crafting resilient, high-leverage digital systems. Focused on turning complex business logic and operational bottlenecks into reliable, human-centered software.
             </p>
-            <div className="flex flex-wrap items-center gap-6 mt-6">
-              <a href="#about-full" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                My Story & Approach <ArrowUpRight className="w-4 h-4" />
-              </a>
-              <a href="#experience" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Work Experience <ArrowUpRight className="w-4 h-4" />
-              </a>
-              <a href="#projects" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                Selected Projects <ArrowUpRight className="w-4 h-4" />
-              </a>
-              <button
-                onClick={() => setResumeOpen(true)}
-                className="inline-flex items-center gap-1.5 text-sm text-foreground hover:opacity-80 transition-opacity font-medium cursor-pointer"
-              >
-                <FileText className="w-4 h-4" />
-                Resume (PDF)
-              </button>
-            </div>
+
           </section>
 
-          {/* Work Experience Section */}
-          <section id="experience" className="mb-14">
-            <h2 className="section-header">Work Experience</h2>
-            <div className="p-5 -mx-4 rounded-lg bg-white/[0.02] border border-white/5 space-y-4">
-              <div>
-                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                  <span className="text-base font-semibold text-foreground">Afro Digital Innovation Labs</span>
-                  <span className="font-mono text-xs text-muted-foreground">Jan 2022 – Aug 2026 · 4 yrs</span>
-                </div>
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-xs font-mono text-muted-foreground/80 mt-1">
-                  <span>Senior Full-Stack Engineer</span>
-                  <span>Addis Ababa, Ethiopia · Full-Time</span>
-                </div>
-              </div>
 
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Led full-stack engineering and system architecture across production web applications, distributed digital systems, and critical client platforms. Spearheaded core backend APIs, robust relational databases, and responsive client applications from initial requirement scoping through deployment.
-              </p>
-
-              <div className="space-y-2.5 pt-1">
-                <p className="text-xs font-mono uppercase tracking-wider text-muted-foreground/70">Key Responsibilities & Achievements</p>
-                <ul className="space-y-2 text-sm text-muted-foreground/90">
-                  <li className="flex items-start gap-2.5">
-                    <span className="text-primary mt-1 text-xs">▸</span>
-                    <span><strong>End-to-End System Architecture:</strong> Architected and delivered resilient web platforms (telemedicine, school management ERP, inventory distribution) from relational schema modeling to accessible frontends.</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="text-primary mt-1 text-xs">▸</span>
-                    <span><strong>Distributed Job Queues:</strong> Engineered high-throughput asynchronous job processing pipelines using Redis and BullMQ for automated report generation, batch email/SMS notifications, and scheduled tasks.</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="text-primary mt-1 text-xs">▸</span>
-                    <span><strong>API & Database Design:</strong> Designed normalized PostgreSQL schemas, optimized query execution, and developed predictable, type-safe RESTful APIs in NestJS with strict validation pipelines.</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="text-primary mt-1 text-xs">▸</span>
-                    <span><strong>Security & Payment Integrations:</strong> Built enterprise-grade authentication with role-based access control (RBAC), encrypted session handling, and seamless localized payment gateways with Chapa.</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="text-primary mt-1 text-xs">▸</span>
-                    <span><strong>Frontend Engineering:</strong> Built fast, mobile-first interfaces utilizing Next.js (App Router), React, TypeScript, Tailwind CSS, and Shadcn UI, maintaining sub-100ms UI response times.</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="text-primary mt-1 text-xs">▸</span>
-                    <span><strong>Engineering Standards & DevOps:</strong> Orchestrated Docker containerization, Linux server administration, and Nginx reverse proxy configurations, while leading code reviews and mentoring junior engineers.</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="pt-2 border-t border-white/5">
-                <p className="text-[11px] font-mono uppercase tracking-wider text-muted-foreground/60 mb-2">Technologies Used</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {["TypeScript", "JavaScript", "Next.js", "React", "NestJS", "Node.js", "PostgreSQL", "Redis", "BullMQ", "Docker", "Linux", "Nginx", "Chapa", "Tailwind CSS", "REST APIs"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="text-[11px] font-mono text-muted-foreground/80 bg-white/[0.03] border border-white/10 rounded px-2 py-0.5"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="pt-3 border-t border-white/5 flex flex-wrap items-center gap-4">
-                <button
-                  onClick={() => setResumeOpen(true)}
-                  className="inline-flex items-center gap-1.5 text-xs text-foreground hover:underline cursor-pointer font-mono font-medium"
-                >
-                  <FileText className="w-3.5 h-3.5" />
-                  View Updated Resume (PDF)
-                </button>
-                <a
-                  href={`${import.meta.env.BASE_URL}Usman_Resume.pdf?v=20261020-senior`}
-                  download="Usman_Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground font-mono transition-colors"
-                >
-                  <Download className="w-3.5 h-3.5" />
-                  Download PDF Directly
-                </a>
-              </div>
-            </div>
-          </section>
 
           {/* Projects Section */}
           <section id="projects" className="flex-1">
             <h2 className="section-header">Selected Projects</h2>
-            
+
             <div className="space-y-4">
               {loading && (
                 <p className="text-sm text-muted-foreground">Loading projects...</p>
@@ -251,8 +151,8 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex justify-end"
             >
-              <a 
-                href="mailto:usmanabdella1121@gmail.com" 
+              <a
+                href="mailto:usmanabdella1121@gmail.com"
                 className="group"
                 aria-label="Send email"
               >
@@ -289,20 +189,77 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Education Section */}
-      <section id="education" className="border-t border-border">
+      {/* Experience & Education Section */}
+      <section id="experience-education" className="border-t border-border">
         <div className="grid grid-cols-1 lg:grid-cols-12">
           <div className="lg:col-span-2 p-6 lg:p-8"></div>
           <div className="lg:col-span-10 p-6 lg:p-8 py-16 lg:py-24">
             <div className="max-w-2xl">
-              <h2 className="section-header">Education & Foundation</h2>
-              <div className="space-y-8">
-                <div>
+              <h2 className="section-header">Work Experience & Education</h2>
+              <div className="space-y-12">
+                {/* Work Experience */}
+                <div className="space-y-4">
+                  <div>
+                    <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                      <p className="text-lg font-medium text-foreground">Afro Digital Innovation Labs</p>
+                      <p className="text-sm text-muted-foreground font-mono">Jan 2022 – Aug 2026 · 4 yrs</p>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-xs font-mono text-muted-foreground/80 mt-1">
+                      <span>Senior Full-Stack Engineer</span>
+                      <span>Addis Ababa, Ethiopia · Full-Time</span>
+                    </div>
+                  </div>
+
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Led full-stack engineering and system architecture across production web applications, distributed digital systems, and critical client platforms. Spearheaded core backend APIs, robust relational databases, and responsive client applications from initial requirement scoping through deployment.
+                  </p>
+
+                  <ul className="space-y-2 text-sm text-muted-foreground/90 pl-1">
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-primary mt-1 text-xs">▸</span>
+                      <span><strong>End-to-End System Architecture:</strong> Architected and delivered resilient web platforms (telemedicine, school management ERP, inventory distribution) from relational schema modeling to accessible frontends.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-primary mt-1 text-xs">▸</span>
+                      <span><strong>Distributed Job Queues:</strong> Engineered high-throughput asynchronous job processing pipelines using Redis and BullMQ for automated report generation, batch email/SMS notifications, and scheduled background tasks.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-primary mt-1 text-xs">▸</span>
+                      <span><strong>API & Database Design:</strong> Designed normalized PostgreSQL schemas, optimized query execution, and developed predictable, type-safe RESTful APIs in NestJS with strict validation pipelines.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-primary mt-1 text-xs">▸</span>
+                      <span><strong>Security & Payment Integrations:</strong> Built enterprise-grade authentication with role-based access control (RBAC), encrypted session handling, and seamless localized payment gateways with Chapa.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-primary mt-1 text-xs">▸</span>
+                      <span><strong>Frontend Engineering:</strong> Built fast, mobile-first interfaces utilizing Next.js (App Router), React, TypeScript, Tailwind CSS, and Shadcn UI, maintaining sub-100ms UI response times.</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <span className="text-primary mt-1 text-xs">▸</span>
+                      <span><strong>Engineering Standards & DevOps:</strong> Orchestrated Docker containerization, Linux server administration, and Nginx reverse proxy configurations, while leading code reviews and mentoring junior engineers.</span>
+                    </li>
+                  </ul>
+
+                  <div className="flex flex-wrap gap-1.5 pt-2">
+                    {["TypeScript", "JavaScript", "Next.js", "React", "NestJS", "Node.js", "PostgreSQL", "Redis", "BullMQ", "Docker", "Linux", "Nginx", "Chapa", "Tailwind CSS", "REST APIs"].map((tech) => (
+                      <span
+                        key={tech}
+                        className="text-[11px] font-mono text-muted-foreground/80 bg-white/[0.03] border border-white/10 rounded px-2 py-0.5"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Education */}
+                <div className="pt-8 border-t border-border">
                   <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                    <p className="text-lg font-normal text-foreground">Bachelor of Engineering (B.E.) in Software Engineering</p>
+                    <p className="text-lg font-medium text-foreground">Bachelor of Engineering (B.E.) in Software Engineering</p>
                     <p className="text-sm text-muted-foreground font-mono">2024 – 2030</p>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-1 font-mono">BITS School of Science and Technology</p>
+                  <p className="text-sm text-muted-foreground mt-1 font-mono">BITS School of Science and Technology · Addis Ababa, Ethiopia</p>
                   <p className="text-sm text-muted-foreground/80 mt-2 leading-relaxed">
                     Engineering core covering algorithms, data structures, relational database systems, software design patterns, and distributed systems.
                   </p>
